@@ -1,0 +1,697 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Bravo_CurrentDataSet" targetNamespace="http://tempuri.org/Bravo_CurrentDataSet.xsd" xmlns:mstns="http://tempuri.org/Bravo_CurrentDataSet.xsd" xmlns="http://tempuri.org/Bravo_CurrentDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Bravo_CurrentConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Bravo_CurrentConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BHHC_ACCOUNTING.Properties.Settings.GlobalReference.Default.Bravo_CurrentConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="bill_statements_worktableTableAdapter" GeneratorDataComponentClassName="bill_statements_worktableTableAdapter" Name="bill_statements_worktable" UserDataComponentName="bill_statements_worktableTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Bravo_CurrentConnectionString (Settings)" DbObjectName="Bravo_Current.dbo.bill_statements_worktable" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[bill_statements_worktable] ([CODE], [COMPANY], [TOLLFREENUM], [CSEXT], [CSEMAIL], [INTERNET], [INSNAME], [INCEPTDTE], [EXPIRDTE], [CARRIER], [AGYNAME], [AGYPHONE], [STATEMENTTYPE], [RENEWBY], [DOWNPMT], [DOWNTYPE], [NUMPAYS], [INSTFEE], [NUMPMTS], [PAYADD1], [PAYADD2], [PAYADD3], [PAYTO], [ISMD], [STATE], [FAXNUMBER], [EMAILADDRESS], [DELIVERYPREFERENCE], [ACCTBAL], [ACCTBALSTFEES], [PASTAMT], [PASTAMTSTFEES], [GROSSPAYAMT], [CURRENTAMT], [CURRENTAMTSTFEES], [DUEDATE], [PNDCANDTE], [TOTPOLPREM], [PMTSAPPLIED], [BILLDATE], [RPTDATE], [EXPYEAR], [CHARGEINSTFEE], [CHARGELATEFEE], [LATEFEE], [ISPAYROLLPROCESSING], [ISPAYBYPAY], [STATEMENTWASFORCED], [RISC], [AGENCY], [ISFIRSTSTMT], [CURRENTDUEDATE], [LOB], [PAYROLLREPORTING], [ISWV], [PRINTSAVEND], [PROCESSED], [CRMID], [ISCONSOLIDATEBILL], [PayToBarCode], [PaymentMethod], [StatementLayoutType], [PriorPendingDraftAmount], [PriorPendingDraftDate], [RenewOf], [InsuredPNDCANDTE], [InsuredCanReason], [InsuredStat5], [InsuredPOCancel], [InsuredStat2], [InsuredPOAudit], [IsEDataUser], [IsPayrollCycle], [FPlansFreq], [CurrentInstallmentFees], [AccountBalanceBillingFees], [LastStatementDate], [ChargeLSRPContigencyDeposit], [LSRPDepositPremium], [RemitCurrentAmount], [AuditStatus], [PreviouslyBilledAmount], [RemitTotalAmount], [BillingAddress], [InsuredAddress], [AgencyAddress], [runType]) VALUES (@CODE, @COMPANY, @TOLLFREENUM, @CSEXT, @CSEMAIL, @INTERNET, @INSNAME, @INCEPTDTE, @EXPIRDTE, @CARRIER, @AGYNAME, @AGYPHONE, @STATEMENTTYPE, @RENEWBY, @DOWNPMT, @DOWNTYPE, @NUMPAYS, @INSTFEE, @NUMPMTS, @PAYADD1, @PAYADD2, @PAYADD3, @PAYTO, @ISMD, @STATE, @FAXNUMBER, @EMAILADDRESS, @DELIVERYPREFERENCE, @ACCTBAL, @ACCTBALSTFEES, @PASTAMT, @PASTAMTSTFEES, @GROSSPAYAMT, @CURRENTAMT, @CURRENTAMTSTFEES, @DUEDATE, @PNDCANDTE, @TOTPOLPREM, @PMTSAPPLIED, @BILLDATE, @RPTDATE, @EXPYEAR, @CHARGEINSTFEE, @CHARGELATEFEE, @LATEFEE, @ISPAYROLLPROCESSING, @ISPAYBYPAY, @STATEMENTWASFORCED, @RISC, @AGENCY, @ISFIRSTSTMT, @CURRENTDUEDATE, @LOB, @PAYROLLREPORTING, @ISWV, @PRINTSAVEND, @PROCESSED, @CRMID, @ISCONSOLIDATEBILL, @PayToBarCode, @PaymentMethod, @StatementLayoutType, @PriorPendingDraftAmount, @PriorPendingDraftDate, @RenewOf, @InsuredPNDCANDTE, @InsuredCanReason, @InsuredStat5, @InsuredPOCancel, @InsuredStat2, @InsuredPOAudit, @IsEDataUser, @IsPayrollCycle, @FPlansFreq, @CurrentInstallmentFees, @AccountBalanceBillingFees, @LastStatementDate, @ChargeLSRPContigencyDeposit, @LSRPDepositPremium, @RemitCurrentAmount, @AuditStatus, @PreviouslyBilledAmount, @RemitTotalAmount, @BillingAddress, @InsuredAddress, @AgencyAddress, @runType)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@CODE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CODE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@COMPANY" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="COMPANY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@TOLLFREENUM" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="TOLLFREENUM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@CSEXT" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CSEXT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@CSEMAIL" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CSEMAIL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@INTERNET" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="INTERNET" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@INSNAME" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="INSNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@INCEPTDTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="INCEPTDTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EXPIRDTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EXPIRDTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CARRIER" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CARRIER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@AGYNAME" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="AGYNAME" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@AGYPHONE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="AGYPHONE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@STATEMENTTYPE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STATEMENTTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@RENEWBY" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="RENEWBY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@DOWNPMT" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="DOWNPMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@DOWNTYPE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="DOWNTYPE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@NUMPAYS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NUMPAYS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@INSTFEE" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="INSTFEE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@NUMPMTS" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NUMPMTS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PAYADD1" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PAYADD1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PAYADD2" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PAYADD2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PAYADD3" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PAYADD3" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PAYTO" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PAYTO" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@ISMD" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="ISMD" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@STATE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@FAXNUMBER" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="FAXNUMBER" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@EMAILADDRESS" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="EMAILADDRESS" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@DELIVERYPREFERENCE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="DELIVERYPREFERENCE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@ACCTBAL" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="ACCTBAL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@ACCTBALSTFEES" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="ACCTBALSTFEES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PASTAMT" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PASTAMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PASTAMTSTFEES" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PASTAMTSTFEES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@GROSSPAYAMT" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="GROSSPAYAMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@CURRENTAMT" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CURRENTAMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@CURRENTAMTSTFEES" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CURRENTAMTSTFEES" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DUEDATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DUEDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PNDCANDTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PNDCANDTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@TOTPOLPREM" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="TOTPOLPREM" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PMTSAPPLIED" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PMTSAPPLIED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@BILLDATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="BILLDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@RPTDATE" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="RPTDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@EXPYEAR" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="EXPYEAR" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@CHARGEINSTFEE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CHARGEINSTFEE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@CHARGELATEFEE" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="CHARGELATEFEE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@LATEFEE" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="LATEFEE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@ISPAYROLLPROCESSING" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="ISPAYROLLPROCESSING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@ISPAYBYPAY" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="ISPAYBYPAY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@STATEMENTWASFORCED" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="STATEMENTWASFORCED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@RISC" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="RISC" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@AGENCY" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="AGENCY" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@ISFIRSTSTMT" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="ISFIRSTSTMT" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@CURRENTDUEDATE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="CURRENTDUEDATE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@LOB" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="LOB" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PAYROLLREPORTING" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PAYROLLREPORTING" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@ISWV" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="ISWV" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PRINTSAVEND" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PRINTSAVEND" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PROCESSED" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PROCESSED" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@CRMID" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="CRMID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@ISCONSOLIDATEBILL" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="ISCONSOLIDATEBILL" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@PayToBarCode" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="PayToBarCode" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PaymentMethod" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PaymentMethod" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@StatementLayoutType" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="StatementLayoutType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PriorPendingDraftAmount" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PriorPendingDraftAmount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PriorPendingDraftDate" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="PriorPendingDraftDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@RenewOf" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="RenewOf" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@InsuredPNDCANDTE" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="InsuredPNDCANDTE" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@InsuredCanReason" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="InsuredCanReason" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@InsuredStat5" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="InsuredStat5" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@InsuredPOCancel" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="InsuredPOCancel" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@InsuredStat2" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="InsuredStat2" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@InsuredPOAudit" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="InsuredPOAudit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@IsEDataUser" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="IsEDataUser" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@IsPayrollCycle" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="IsPayrollCycle" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@FPlansFreq" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="FPlansFreq" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@CurrentInstallmentFees" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="CurrentInstallmentFees" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@AccountBalanceBillingFees" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="AccountBalanceBillingFees" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@LastStatementDate" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="LastStatementDate" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@ChargeLSRPContigencyDeposit" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="ChargeLSRPContigencyDeposit" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@LSRPDepositPremium" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="LSRPDepositPremium" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@RemitCurrentAmount" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="RemitCurrentAmount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@AuditStatus" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="AuditStatus" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@PreviouslyBilledAmount" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="PreviouslyBilledAmount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Currency" Direction="Input" ParameterName="@RemitTotalAmount" Precision="0" ProviderType="Money" Scale="0" Size="0" SourceColumn="RemitTotalAmount" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@BillingAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="BillingAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@InsuredAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="InsuredAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@AgencyAddress" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="AgencyAddress" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="AnsiStringFixedLength" Direction="Input" ParameterName="@runType" Precision="0" ProviderType="Char" Scale="0" Size="0" SourceColumn="runType" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CODE, COMPANY, TOLLFREENUM, CSEXT, CSEMAIL, INTERNET, INSNAME, INCEPTDTE, EXPIRDTE, CARRIER, AGYNAME, AGYPHONE, STATEMENTTYPE, RENEWBY, DOWNPMT, DOWNTYPE, NUMPAYS, INSTFEE, NUMPMTS, PAYADD1, PAYADD2, PAYADD3, PAYTO, ISMD, STATE, FAXNUMBER, EMAILADDRESS, DELIVERYPREFERENCE, ACCTBAL, ACCTBALSTFEES, PASTAMT, PASTAMTSTFEES, GROSSPAYAMT, CURRENTAMT, CURRENTAMTSTFEES, DUEDATE, PNDCANDTE, TOTPOLPREM, PMTSAPPLIED, BILLDATE, RPTDATE, EXPYEAR, CHARGEINSTFEE, CHARGELATEFEE, LATEFEE, ISPAYROLLPROCESSING, ISPAYBYPAY, STATEMENTWASFORCED, RISC, AGENCY, ISFIRSTSTMT, CURRENTDUEDATE, LOB, PAYROLLREPORTING, ISWV, PRINTSAVEND, PROCESSED, CRMID, ISCONSOLIDATEBILL, PayToBarCode, PaymentMethod, StatementLayoutType, PriorPendingDraftAmount, PriorPendingDraftDate, RenewOf, InsuredPNDCANDTE, InsuredCanReason, InsuredStat5, InsuredPOCancel, InsuredStat2, InsuredPOAudit, IsEDataUser, IsPayrollCycle, FPlansFreq, CurrentInstallmentFees, AccountBalanceBillingFees, LastStatementDate, ChargeLSRPContigencyDeposit, LSRPDepositPremium, RemitCurrentAmount, AuditStatus, PreviouslyBilledAmount, RemitTotalAmount, BillingAddress, InsuredAddress, AgencyAddress, runType FROM dbo.bill_statements_worktable</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CODE" DataSetColumn="CODE" />
+              <Mapping SourceColumn="COMPANY" DataSetColumn="COMPANY" />
+              <Mapping SourceColumn="TOLLFREENUM" DataSetColumn="TOLLFREENUM" />
+              <Mapping SourceColumn="CSEXT" DataSetColumn="CSEXT" />
+              <Mapping SourceColumn="CSEMAIL" DataSetColumn="CSEMAIL" />
+              <Mapping SourceColumn="INTERNET" DataSetColumn="INTERNET" />
+              <Mapping SourceColumn="INSNAME" DataSetColumn="INSNAME" />
+              <Mapping SourceColumn="INCEPTDTE" DataSetColumn="INCEPTDTE" />
+              <Mapping SourceColumn="EXPIRDTE" DataSetColumn="EXPIRDTE" />
+              <Mapping SourceColumn="CARRIER" DataSetColumn="CARRIER" />
+              <Mapping SourceColumn="AGYNAME" DataSetColumn="AGYNAME" />
+              <Mapping SourceColumn="AGYPHONE" DataSetColumn="AGYPHONE" />
+              <Mapping SourceColumn="STATEMENTTYPE" DataSetColumn="STATEMENTTYPE" />
+              <Mapping SourceColumn="RENEWBY" DataSetColumn="RENEWBY" />
+              <Mapping SourceColumn="DOWNPMT" DataSetColumn="DOWNPMT" />
+              <Mapping SourceColumn="DOWNTYPE" DataSetColumn="DOWNTYPE" />
+              <Mapping SourceColumn="NUMPAYS" DataSetColumn="NUMPAYS" />
+              <Mapping SourceColumn="INSTFEE" DataSetColumn="INSTFEE" />
+              <Mapping SourceColumn="NUMPMTS" DataSetColumn="NUMPMTS" />
+              <Mapping SourceColumn="PAYADD1" DataSetColumn="PAYADD1" />
+              <Mapping SourceColumn="PAYADD2" DataSetColumn="PAYADD2" />
+              <Mapping SourceColumn="PAYADD3" DataSetColumn="PAYADD3" />
+              <Mapping SourceColumn="PAYTO" DataSetColumn="PAYTO" />
+              <Mapping SourceColumn="ISMD" DataSetColumn="ISMD" />
+              <Mapping SourceColumn="STATE" DataSetColumn="STATE" />
+              <Mapping SourceColumn="FAXNUMBER" DataSetColumn="FAXNUMBER" />
+              <Mapping SourceColumn="EMAILADDRESS" DataSetColumn="EMAILADDRESS" />
+              <Mapping SourceColumn="DELIVERYPREFERENCE" DataSetColumn="DELIVERYPREFERENCE" />
+              <Mapping SourceColumn="ACCTBAL" DataSetColumn="ACCTBAL" />
+              <Mapping SourceColumn="ACCTBALSTFEES" DataSetColumn="ACCTBALSTFEES" />
+              <Mapping SourceColumn="PASTAMT" DataSetColumn="PASTAMT" />
+              <Mapping SourceColumn="PASTAMTSTFEES" DataSetColumn="PASTAMTSTFEES" />
+              <Mapping SourceColumn="GROSSPAYAMT" DataSetColumn="GROSSPAYAMT" />
+              <Mapping SourceColumn="CURRENTAMT" DataSetColumn="CURRENTAMT" />
+              <Mapping SourceColumn="CURRENTAMTSTFEES" DataSetColumn="CURRENTAMTSTFEES" />
+              <Mapping SourceColumn="DUEDATE" DataSetColumn="DUEDATE" />
+              <Mapping SourceColumn="PNDCANDTE" DataSetColumn="PNDCANDTE" />
+              <Mapping SourceColumn="TOTPOLPREM" DataSetColumn="TOTPOLPREM" />
+              <Mapping SourceColumn="PMTSAPPLIED" DataSetColumn="PMTSAPPLIED" />
+              <Mapping SourceColumn="BILLDATE" DataSetColumn="BILLDATE" />
+              <Mapping SourceColumn="RPTDATE" DataSetColumn="RPTDATE" />
+              <Mapping SourceColumn="EXPYEAR" DataSetColumn="EXPYEAR" />
+              <Mapping SourceColumn="CHARGEINSTFEE" DataSetColumn="CHARGEINSTFEE" />
+              <Mapping SourceColumn="CHARGELATEFEE" DataSetColumn="CHARGELATEFEE" />
+              <Mapping SourceColumn="LATEFEE" DataSetColumn="LATEFEE" />
+              <Mapping SourceColumn="ISPAYROLLPROCESSING" DataSetColumn="ISPAYROLLPROCESSING" />
+              <Mapping SourceColumn="ISPAYBYPAY" DataSetColumn="ISPAYBYPAY" />
+              <Mapping SourceColumn="STATEMENTWASFORCED" DataSetColumn="STATEMENTWASFORCED" />
+              <Mapping SourceColumn="RISC" DataSetColumn="RISC" />
+              <Mapping SourceColumn="AGENCY" DataSetColumn="AGENCY" />
+              <Mapping SourceColumn="ISFIRSTSTMT" DataSetColumn="ISFIRSTSTMT" />
+              <Mapping SourceColumn="CURRENTDUEDATE" DataSetColumn="CURRENTDUEDATE" />
+              <Mapping SourceColumn="LOB" DataSetColumn="LOB" />
+              <Mapping SourceColumn="PAYROLLREPORTING" DataSetColumn="PAYROLLREPORTING" />
+              <Mapping SourceColumn="ISWV" DataSetColumn="ISWV" />
+              <Mapping SourceColumn="PRINTSAVEND" DataSetColumn="PRINTSAVEND" />
+              <Mapping SourceColumn="PROCESSED" DataSetColumn="PROCESSED" />
+              <Mapping SourceColumn="CRMID" DataSetColumn="CRMID" />
+              <Mapping SourceColumn="ISCONSOLIDATEBILL" DataSetColumn="ISCONSOLIDATEBILL" />
+              <Mapping SourceColumn="PayToBarCode" DataSetColumn="PayToBarCode" />
+              <Mapping SourceColumn="PaymentMethod" DataSetColumn="PaymentMethod" />
+              <Mapping SourceColumn="StatementLayoutType" DataSetColumn="StatementLayoutType" />
+              <Mapping SourceColumn="PriorPendingDraftAmount" DataSetColumn="PriorPendingDraftAmount" />
+              <Mapping SourceColumn="PriorPendingDraftDate" DataSetColumn="PriorPendingDraftDate" />
+              <Mapping SourceColumn="RenewOf" DataSetColumn="RenewOf" />
+              <Mapping SourceColumn="InsuredPNDCANDTE" DataSetColumn="InsuredPNDCANDTE" />
+              <Mapping SourceColumn="InsuredCanReason" DataSetColumn="InsuredCanReason" />
+              <Mapping SourceColumn="InsuredStat5" DataSetColumn="InsuredStat5" />
+              <Mapping SourceColumn="InsuredPOCancel" DataSetColumn="InsuredPOCancel" />
+              <Mapping SourceColumn="InsuredStat2" DataSetColumn="InsuredStat2" />
+              <Mapping SourceColumn="InsuredPOAudit" DataSetColumn="InsuredPOAudit" />
+              <Mapping SourceColumn="IsEDataUser" DataSetColumn="IsEDataUser" />
+              <Mapping SourceColumn="IsPayrollCycle" DataSetColumn="IsPayrollCycle" />
+              <Mapping SourceColumn="FPlansFreq" DataSetColumn="FPlansFreq" />
+              <Mapping SourceColumn="CurrentInstallmentFees" DataSetColumn="CurrentInstallmentFees" />
+              <Mapping SourceColumn="AccountBalanceBillingFees" DataSetColumn="AccountBalanceBillingFees" />
+              <Mapping SourceColumn="LastStatementDate" DataSetColumn="LastStatementDate" />
+              <Mapping SourceColumn="ChargeLSRPContigencyDeposit" DataSetColumn="ChargeLSRPContigencyDeposit" />
+              <Mapping SourceColumn="LSRPDepositPremium" DataSetColumn="LSRPDepositPremium" />
+              <Mapping SourceColumn="RemitCurrentAmount" DataSetColumn="RemitCurrentAmount" />
+              <Mapping SourceColumn="AuditStatus" DataSetColumn="AuditStatus" />
+              <Mapping SourceColumn="PreviouslyBilledAmount" DataSetColumn="PreviouslyBilledAmount" />
+              <Mapping SourceColumn="RemitTotalAmount" DataSetColumn="RemitTotalAmount" />
+              <Mapping SourceColumn="BillingAddress" DataSetColumn="BillingAddress" />
+              <Mapping SourceColumn="InsuredAddress" DataSetColumn="InsuredAddress" />
+              <Mapping SourceColumn="AgencyAddress" DataSetColumn="AgencyAddress" />
+              <Mapping SourceColumn="runType" DataSetColumn="runType" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="Bravo_CurrentConnectionString (Settings)" DbObjectName="Bravo_Current.dbo.bill_statements_worktable" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CODE, COMPANY, TOLLFREENUM, CSEXT, CSEMAIL, INTERNET, INSNAME, INCEPTDTE, EXPIRDTE, CARRIER, AGYNAME, AGYPHONE, STATEMENTTYPE, RENEWBY, DOWNPMT, DOWNTYPE, NUMPAYS, INSTFEE, NUMPMTS, PAYADD1, PAYADD2, PAYADD3, PAYTO, ISMD, STATE, FAXNUMBER, EMAILADDRESS, DELIVERYPREFERENCE, ACCTBAL, ACCTBALSTFEES, PASTAMT, PASTAMTSTFEES, GROSSPAYAMT, CURRENTAMT, CURRENTAMTSTFEES, DUEDATE, PNDCANDTE, TOTPOLPREM, PMTSAPPLIED, BILLDATE, RPTDATE, EXPYEAR, CHARGEINSTFEE, CHARGELATEFEE, LATEFEE, ISPAYROLLPROCESSING, ISPAYBYPAY, STATEMENTWASFORCED, RISC, AGENCY, ISFIRSTSTMT, CURRENTDUEDATE, LOB, PAYROLLREPORTING, ISWV, PRINTSAVEND, PROCESSED, CRMID, ISCONSOLIDATEBILL, PayToBarCode, PaymentMethod, StatementLayoutType, PriorPendingDraftAmount, PriorPendingDraftDate, RenewOf, InsuredPNDCANDTE, InsuredCanReason, InsuredStat5, InsuredPOCancel, InsuredStat2, InsuredPOAudit, IsEDataUser, IsPayrollCycle, FPlansFreq, CurrentInstallmentFees, AccountBalanceBillingFees, LastStatementDate, ChargeLSRPContigencyDeposit, LSRPDepositPremium, RemitCurrentAmount, AuditStatus, PreviouslyBilledAmount, RemitTotalAmount, BillingAddress, InsuredAddress, AgencyAddress, runType FROM dbo.bill_statements_worktable</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Bravo_CurrentDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="Bravo_CurrentDataSet" msprop:Generator_UserDSName="Bravo_CurrentDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="bill_statements_worktable" msprop:Generator_TableClassName="bill_statements_worktableDataTable" msprop:Generator_TableVarName="tablebill_statements_worktable" msprop:Generator_RowChangedName="bill_statements_worktableRowChanged" msprop:Generator_TablePropName="bill_statements_worktable" msprop:Generator_RowDeletingName="bill_statements_worktableRowDeleting" msprop:Generator_RowChangingName="bill_statements_worktableRowChanging" msprop:Generator_RowEvHandlerName="bill_statements_worktableRowChangeEventHandler" msprop:Generator_RowDeletedName="bill_statements_worktableRowDeleted" msprop:Generator_RowClassName="bill_statements_worktableRow" msprop:Generator_UserTableName="bill_statements_worktable" msprop:Generator_RowEvArgName="bill_statements_worktableRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CODE" msprop:Generator_ColumnVarNameInTable="columnCODE" msprop:Generator_ColumnPropNameInRow="CODE" msprop:Generator_ColumnPropNameInTable="CODEColumn" msprop:Generator_UserColumnName="CODE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="COMPANY" msprop:Generator_ColumnVarNameInTable="columnCOMPANY" msprop:Generator_ColumnPropNameInRow="COMPANY" msprop:Generator_ColumnPropNameInTable="COMPANYColumn" msprop:Generator_UserColumnName="COMPANY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOLLFREENUM" msprop:Generator_ColumnVarNameInTable="columnTOLLFREENUM" msprop:Generator_ColumnPropNameInRow="TOLLFREENUM" msprop:Generator_ColumnPropNameInTable="TOLLFREENUMColumn" msprop:Generator_UserColumnName="TOLLFREENUM" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSEXT" msprop:Generator_ColumnVarNameInTable="columnCSEXT" msprop:Generator_ColumnPropNameInRow="CSEXT" msprop:Generator_ColumnPropNameInTable="CSEXTColumn" msprop:Generator_UserColumnName="CSEXT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CSEMAIL" msprop:Generator_ColumnVarNameInTable="columnCSEMAIL" msprop:Generator_ColumnPropNameInRow="CSEMAIL" msprop:Generator_ColumnPropNameInTable="CSEMAILColumn" msprop:Generator_UserColumnName="CSEMAIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INTERNET" msprop:Generator_ColumnVarNameInTable="columnINTERNET" msprop:Generator_ColumnPropNameInRow="INTERNET" msprop:Generator_ColumnPropNameInTable="INTERNETColumn" msprop:Generator_UserColumnName="INTERNET" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INSNAME" msprop:Generator_ColumnVarNameInTable="columnINSNAME" msprop:Generator_ColumnPropNameInRow="INSNAME" msprop:Generator_ColumnPropNameInTable="INSNAMEColumn" msprop:Generator_UserColumnName="INSNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="INCEPTDTE" msprop:Generator_ColumnVarNameInTable="columnINCEPTDTE" msprop:Generator_ColumnPropNameInRow="INCEPTDTE" msprop:Generator_ColumnPropNameInTable="INCEPTDTEColumn" msprop:Generator_UserColumnName="INCEPTDTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EXPIRDTE" msprop:Generator_ColumnVarNameInTable="columnEXPIRDTE" msprop:Generator_ColumnPropNameInRow="EXPIRDTE" msprop:Generator_ColumnPropNameInTable="EXPIRDTEColumn" msprop:Generator_UserColumnName="EXPIRDTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CARRIER" msprop:Generator_ColumnVarNameInTable="columnCARRIER" msprop:Generator_ColumnPropNameInRow="CARRIER" msprop:Generator_ColumnPropNameInTable="CARRIERColumn" msprop:Generator_UserColumnName="CARRIER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AGYNAME" msprop:Generator_ColumnVarNameInTable="columnAGYNAME" msprop:Generator_ColumnPropNameInRow="AGYNAME" msprop:Generator_ColumnPropNameInTable="AGYNAMEColumn" msprop:Generator_UserColumnName="AGYNAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AGYPHONE" msprop:Generator_ColumnVarNameInTable="columnAGYPHONE" msprop:Generator_ColumnPropNameInRow="AGYPHONE" msprop:Generator_ColumnPropNameInTable="AGYPHONEColumn" msprop:Generator_UserColumnName="AGYPHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATEMENTTYPE" msprop:Generator_ColumnVarNameInTable="columnSTATEMENTTYPE" msprop:Generator_ColumnPropNameInRow="STATEMENTTYPE" msprop:Generator_ColumnPropNameInTable="STATEMENTTYPEColumn" msprop:Generator_UserColumnName="STATEMENTTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RENEWBY" msprop:Generator_ColumnVarNameInTable="columnRENEWBY" msprop:Generator_ColumnPropNameInRow="RENEWBY" msprop:Generator_ColumnPropNameInTable="RENEWBYColumn" msprop:Generator_UserColumnName="RENEWBY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOWNPMT" msprop:Generator_ColumnVarNameInTable="columnDOWNPMT" msprop:Generator_ColumnPropNameInRow="DOWNPMT" msprop:Generator_ColumnPropNameInTable="DOWNPMTColumn" msprop:Generator_UserColumnName="DOWNPMT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DOWNTYPE" msprop:Generator_ColumnVarNameInTable="columnDOWNTYPE" msprop:Generator_ColumnPropNameInRow="DOWNTYPE" msprop:Generator_ColumnPropNameInTable="DOWNTYPEColumn" msprop:Generator_UserColumnName="DOWNTYPE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NUMPAYS" msprop:Generator_ColumnVarNameInTable="columnNUMPAYS" msprop:Generator_ColumnPropNameInRow="NUMPAYS" msprop:Generator_ColumnPropNameInTable="NUMPAYSColumn" msprop:Generator_UserColumnName="NUMPAYS" type="xs:int" minOccurs="0" />
+              <xs:element name="INSTFEE" msprop:Generator_ColumnVarNameInTable="columnINSTFEE" msprop:Generator_ColumnPropNameInRow="INSTFEE" msprop:Generator_ColumnPropNameInTable="INSTFEEColumn" msprop:Generator_UserColumnName="INSTFEE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NUMPMTS" msprop:Generator_ColumnVarNameInTable="columnNUMPMTS" msprop:Generator_ColumnPropNameInRow="NUMPMTS" msprop:Generator_ColumnPropNameInTable="NUMPMTSColumn" msprop:Generator_UserColumnName="NUMPMTS" type="xs:int" minOccurs="0" />
+              <xs:element name="PAYADD1" msprop:Generator_ColumnVarNameInTable="columnPAYADD1" msprop:Generator_ColumnPropNameInRow="PAYADD1" msprop:Generator_ColumnPropNameInTable="PAYADD1Column" msprop:Generator_UserColumnName="PAYADD1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAYADD2" msprop:Generator_ColumnVarNameInTable="columnPAYADD2" msprop:Generator_ColumnPropNameInRow="PAYADD2" msprop:Generator_ColumnPropNameInTable="PAYADD2Column" msprop:Generator_UserColumnName="PAYADD2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAYADD3" msprop:Generator_ColumnVarNameInTable="columnPAYADD3" msprop:Generator_ColumnPropNameInRow="PAYADD3" msprop:Generator_ColumnPropNameInTable="PAYADD3Column" msprop:Generator_UserColumnName="PAYADD3" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAYTO" msprop:Generator_ColumnVarNameInTable="columnPAYTO" msprop:Generator_ColumnPropNameInRow="PAYTO" msprop:Generator_ColumnPropNameInTable="PAYTOColumn" msprop:Generator_UserColumnName="PAYTO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISMD" msprop:Generator_ColumnVarNameInTable="columnISMD" msprop:Generator_ColumnPropNameInRow="ISMD" msprop:Generator_ColumnPropNameInTable="ISMDColumn" msprop:Generator_UserColumnName="ISMD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATE" msprop:Generator_ColumnVarNameInTable="columnSTATE" msprop:Generator_ColumnPropNameInRow="STATE" msprop:Generator_ColumnPropNameInTable="STATEColumn" msprop:Generator_UserColumnName="STATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FAXNUMBER" msprop:Generator_ColumnVarNameInTable="columnFAXNUMBER" msprop:Generator_ColumnPropNameInRow="FAXNUMBER" msprop:Generator_ColumnPropNameInTable="FAXNUMBERColumn" msprop:Generator_UserColumnName="FAXNUMBER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EMAILADDRESS" msprop:Generator_ColumnVarNameInTable="columnEMAILADDRESS" msprop:Generator_ColumnPropNameInRow="EMAILADDRESS" msprop:Generator_ColumnPropNameInTable="EMAILADDRESSColumn" msprop:Generator_UserColumnName="EMAILADDRESS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DELIVERYPREFERENCE" msprop:Generator_ColumnVarNameInTable="columnDELIVERYPREFERENCE" msprop:Generator_ColumnPropNameInRow="DELIVERYPREFERENCE" msprop:Generator_ColumnPropNameInTable="DELIVERYPREFERENCEColumn" msprop:Generator_UserColumnName="DELIVERYPREFERENCE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ACCTBAL" msprop:Generator_ColumnVarNameInTable="columnACCTBAL" msprop:Generator_ColumnPropNameInRow="ACCTBAL" msprop:Generator_ColumnPropNameInTable="ACCTBALColumn" msprop:Generator_UserColumnName="ACCTBAL" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ACCTBALSTFEES" msprop:Generator_ColumnVarNameInTable="columnACCTBALSTFEES" msprop:Generator_ColumnPropNameInRow="ACCTBALSTFEES" msprop:Generator_ColumnPropNameInTable="ACCTBALSTFEESColumn" msprop:Generator_UserColumnName="ACCTBALSTFEES" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PASTAMT" msprop:Generator_ColumnVarNameInTable="columnPASTAMT" msprop:Generator_ColumnPropNameInRow="PASTAMT" msprop:Generator_ColumnPropNameInTable="PASTAMTColumn" msprop:Generator_UserColumnName="PASTAMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PASTAMTSTFEES" msprop:Generator_ColumnVarNameInTable="columnPASTAMTSTFEES" msprop:Generator_ColumnPropNameInRow="PASTAMTSTFEES" msprop:Generator_ColumnPropNameInTable="PASTAMTSTFEESColumn" msprop:Generator_UserColumnName="PASTAMTSTFEES" type="xs:decimal" minOccurs="0" />
+              <xs:element name="GROSSPAYAMT" msprop:Generator_ColumnVarNameInTable="columnGROSSPAYAMT" msprop:Generator_ColumnPropNameInRow="GROSSPAYAMT" msprop:Generator_ColumnPropNameInTable="GROSSPAYAMTColumn" msprop:Generator_UserColumnName="GROSSPAYAMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CURRENTAMT" msprop:Generator_ColumnVarNameInTable="columnCURRENTAMT" msprop:Generator_ColumnPropNameInRow="CURRENTAMT" msprop:Generator_ColumnPropNameInTable="CURRENTAMTColumn" msprop:Generator_UserColumnName="CURRENTAMT" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CURRENTAMTSTFEES" msprop:Generator_ColumnVarNameInTable="columnCURRENTAMTSTFEES" msprop:Generator_ColumnPropNameInRow="CURRENTAMTSTFEES" msprop:Generator_ColumnPropNameInTable="CURRENTAMTSTFEESColumn" msprop:Generator_UserColumnName="CURRENTAMTSTFEES" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DUEDATE" msprop:Generator_ColumnVarNameInTable="columnDUEDATE" msprop:Generator_ColumnPropNameInRow="DUEDATE" msprop:Generator_ColumnPropNameInTable="DUEDATEColumn" msprop:Generator_UserColumnName="DUEDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PNDCANDTE" msprop:Generator_ColumnVarNameInTable="columnPNDCANDTE" msprop:Generator_ColumnPropNameInRow="PNDCANDTE" msprop:Generator_ColumnPropNameInTable="PNDCANDTEColumn" msprop:Generator_UserColumnName="PNDCANDTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TOTPOLPREM" msprop:Generator_ColumnVarNameInTable="columnTOTPOLPREM" msprop:Generator_ColumnPropNameInRow="TOTPOLPREM" msprop:Generator_ColumnPropNameInTable="TOTPOLPREMColumn" msprop:Generator_UserColumnName="TOTPOLPREM" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PMTSAPPLIED" msprop:Generator_ColumnVarNameInTable="columnPMTSAPPLIED" msprop:Generator_ColumnPropNameInRow="PMTSAPPLIED" msprop:Generator_ColumnPropNameInTable="PMTSAPPLIEDColumn" msprop:Generator_UserColumnName="PMTSAPPLIED" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BILLDATE" msprop:Generator_ColumnVarNameInTable="columnBILLDATE" msprop:Generator_ColumnPropNameInRow="BILLDATE" msprop:Generator_ColumnPropNameInTable="BILLDATEColumn" msprop:Generator_UserColumnName="BILLDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="RPTDATE" msprop:Generator_ColumnVarNameInTable="columnRPTDATE" msprop:Generator_ColumnPropNameInRow="RPTDATE" msprop:Generator_ColumnPropNameInTable="RPTDATEColumn" msprop:Generator_UserColumnName="RPTDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EXPYEAR" msprop:Generator_ColumnVarNameInTable="columnEXPYEAR" msprop:Generator_ColumnPropNameInRow="EXPYEAR" msprop:Generator_ColumnPropNameInTable="EXPYEARColumn" msprop:Generator_UserColumnName="EXPYEAR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHARGEINSTFEE" msprop:Generator_ColumnVarNameInTable="columnCHARGEINSTFEE" msprop:Generator_ColumnPropNameInRow="CHARGEINSTFEE" msprop:Generator_ColumnPropNameInTable="CHARGEINSTFEEColumn" msprop:Generator_UserColumnName="CHARGEINSTFEE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CHARGELATEFEE" msprop:Generator_ColumnVarNameInTable="columnCHARGELATEFEE" msprop:Generator_ColumnPropNameInRow="CHARGELATEFEE" msprop:Generator_ColumnPropNameInTable="CHARGELATEFEEColumn" msprop:Generator_UserColumnName="CHARGELATEFEE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LATEFEE" msprop:Generator_ColumnVarNameInTable="columnLATEFEE" msprop:Generator_ColumnPropNameInRow="LATEFEE" msprop:Generator_ColumnPropNameInTable="LATEFEEColumn" msprop:Generator_UserColumnName="LATEFEE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ISPAYROLLPROCESSING" msprop:Generator_ColumnVarNameInTable="columnISPAYROLLPROCESSING" msprop:Generator_ColumnPropNameInRow="ISPAYROLLPROCESSING" msprop:Generator_ColumnPropNameInTable="ISPAYROLLPROCESSINGColumn" msprop:Generator_UserColumnName="ISPAYROLLPROCESSING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISPAYBYPAY" msprop:Generator_ColumnVarNameInTable="columnISPAYBYPAY" msprop:Generator_ColumnPropNameInRow="ISPAYBYPAY" msprop:Generator_ColumnPropNameInTable="ISPAYBYPAYColumn" msprop:Generator_UserColumnName="ISPAYBYPAY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="STATEMENTWASFORCED" msprop:Generator_ColumnVarNameInTable="columnSTATEMENTWASFORCED" msprop:Generator_ColumnPropNameInRow="STATEMENTWASFORCED" msprop:Generator_ColumnPropNameInTable="STATEMENTWASFORCEDColumn" msprop:Generator_UserColumnName="STATEMENTWASFORCED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RISC" msprop:Generator_ColumnVarNameInTable="columnRISC" msprop:Generator_ColumnPropNameInRow="RISC" msprop:Generator_ColumnPropNameInTable="RISCColumn" msprop:Generator_UserColumnName="RISC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AGENCY" msprop:Generator_ColumnVarNameInTable="columnAGENCY" msprop:Generator_ColumnPropNameInRow="AGENCY" msprop:Generator_ColumnPropNameInTable="AGENCYColumn" msprop:Generator_UserColumnName="AGENCY" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISFIRSTSTMT" msprop:Generator_ColumnVarNameInTable="columnISFIRSTSTMT" msprop:Generator_ColumnPropNameInRow="ISFIRSTSTMT" msprop:Generator_ColumnPropNameInTable="ISFIRSTSTMTColumn" msprop:Generator_UserColumnName="ISFIRSTSTMT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CURRENTDUEDATE" msprop:Generator_ColumnVarNameInTable="columnCURRENTDUEDATE" msprop:Generator_ColumnPropNameInRow="CURRENTDUEDATE" msprop:Generator_ColumnPropNameInTable="CURRENTDUEDATEColumn" msprop:Generator_UserColumnName="CURRENTDUEDATE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOB" msprop:Generator_ColumnVarNameInTable="columnLOB" msprop:Generator_ColumnPropNameInRow="LOB" msprop:Generator_ColumnPropNameInTable="LOBColumn" msprop:Generator_UserColumnName="LOB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PAYROLLREPORTING" msprop:Generator_ColumnVarNameInTable="columnPAYROLLREPORTING" msprop:Generator_ColumnPropNameInRow="PAYROLLREPORTING" msprop:Generator_ColumnPropNameInTable="PAYROLLREPORTINGColumn" msprop:Generator_UserColumnName="PAYROLLREPORTING" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ISWV" msprop:Generator_ColumnVarNameInTable="columnISWV" msprop:Generator_ColumnPropNameInRow="ISWV" msprop:Generator_ColumnPropNameInTable="ISWVColumn" msprop:Generator_UserColumnName="ISWV" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRINTSAVEND" msprop:Generator_ColumnVarNameInTable="columnPRINTSAVEND" msprop:Generator_ColumnPropNameInRow="PRINTSAVEND" msprop:Generator_ColumnPropNameInTable="PRINTSAVENDColumn" msprop:Generator_UserColumnName="PRINTSAVEND" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PROCESSED" msprop:Generator_ColumnVarNameInTable="columnPROCESSED" msprop:Generator_ColumnPropNameInRow="PROCESSED" msprop:Generator_ColumnPropNameInTable="PROCESSEDColumn" msprop:Generator_UserColumnName="PROCESSED" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CRMID" msprop:Generator_ColumnVarNameInTable="columnCRMID" msprop:Generator_ColumnPropNameInRow="CRMID" msprop:Generator_ColumnPropNameInTable="CRMIDColumn" msprop:Generator_UserColumnName="CRMID" type="xs:int" minOccurs="0" />
+              <xs:element name="ISCONSOLIDATEBILL" msprop:Generator_ColumnVarNameInTable="columnISCONSOLIDATEBILL" msprop:Generator_ColumnPropNameInRow="ISCONSOLIDATEBILL" msprop:Generator_ColumnPropNameInTable="ISCONSOLIDATEBILLColumn" msprop:Generator_UserColumnName="ISCONSOLIDATEBILL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PayToBarCode" msprop:Generator_ColumnVarNameInTable="columnPayToBarCode" msprop:Generator_ColumnPropNameInRow="PayToBarCode" msprop:Generator_ColumnPropNameInTable="PayToBarCodeColumn" msprop:Generator_UserColumnName="PayToBarCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="65" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PaymentMethod" msprop:Generator_ColumnVarNameInTable="columnPaymentMethod" msprop:Generator_ColumnPropNameInRow="PaymentMethod" msprop:Generator_ColumnPropNameInTable="PaymentMethodColumn" msprop:Generator_UserColumnName="PaymentMethod" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StatementLayoutType" msprop:Generator_ColumnVarNameInTable="columnStatementLayoutType" msprop:Generator_ColumnPropNameInRow="StatementLayoutType" msprop:Generator_ColumnPropNameInTable="StatementLayoutTypeColumn" msprop:Generator_UserColumnName="StatementLayoutType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="25" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PriorPendingDraftAmount" msprop:Generator_ColumnVarNameInTable="columnPriorPendingDraftAmount" msprop:Generator_ColumnPropNameInRow="PriorPendingDraftAmount" msprop:Generator_ColumnPropNameInTable="PriorPendingDraftAmountColumn" msprop:Generator_UserColumnName="PriorPendingDraftAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PriorPendingDraftDate" msprop:Generator_ColumnVarNameInTable="columnPriorPendingDraftDate" msprop:Generator_ColumnPropNameInRow="PriorPendingDraftDate" msprop:Generator_ColumnPropNameInTable="PriorPendingDraftDateColumn" msprop:Generator_UserColumnName="PriorPendingDraftDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RenewOf" msprop:Generator_ColumnVarNameInTable="columnRenewOf" msprop:Generator_ColumnPropNameInRow="RenewOf" msprop:Generator_ColumnPropNameInTable="RenewOfColumn" msprop:Generator_UserColumnName="RenewOf" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InsuredPNDCANDTE" msprop:Generator_ColumnVarNameInTable="columnInsuredPNDCANDTE" msprop:Generator_ColumnPropNameInRow="InsuredPNDCANDTE" msprop:Generator_ColumnPropNameInTable="InsuredPNDCANDTEColumn" msprop:Generator_UserColumnName="InsuredPNDCANDTE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InsuredCanReason" msprop:Generator_ColumnVarNameInTable="columnInsuredCanReason" msprop:Generator_ColumnPropNameInRow="InsuredCanReason" msprop:Generator_ColumnPropNameInTable="InsuredCanReasonColumn" msprop:Generator_UserColumnName="InsuredCanReason" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InsuredStat5" msprop:Generator_ColumnVarNameInTable="columnInsuredStat5" msprop:Generator_ColumnPropNameInRow="InsuredStat5" msprop:Generator_ColumnPropNameInTable="InsuredStat5Column" msprop:Generator_UserColumnName="InsuredStat5" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InsuredPOCancel" msprop:Generator_ColumnVarNameInTable="columnInsuredPOCancel" msprop:Generator_ColumnPropNameInRow="InsuredPOCancel" msprop:Generator_ColumnPropNameInTable="InsuredPOCancelColumn" msprop:Generator_UserColumnName="InsuredPOCancel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InsuredStat2" msprop:Generator_ColumnVarNameInTable="columnInsuredStat2" msprop:Generator_ColumnPropNameInRow="InsuredStat2" msprop:Generator_ColumnPropNameInTable="InsuredStat2Column" msprop:Generator_UserColumnName="InsuredStat2" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InsuredPOAudit" msprop:Generator_ColumnVarNameInTable="columnInsuredPOAudit" msprop:Generator_ColumnPropNameInRow="InsuredPOAudit" msprop:Generator_ColumnPropNameInTable="InsuredPOAuditColumn" msprop:Generator_UserColumnName="InsuredPOAudit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsEDataUser" msprop:Generator_ColumnVarNameInTable="columnIsEDataUser" msprop:Generator_ColumnPropNameInRow="IsEDataUser" msprop:Generator_ColumnPropNameInTable="IsEDataUserColumn" msprop:Generator_UserColumnName="IsEDataUser" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsPayrollCycle" msprop:Generator_ColumnVarNameInTable="columnIsPayrollCycle" msprop:Generator_ColumnPropNameInRow="IsPayrollCycle" msprop:Generator_ColumnPropNameInTable="IsPayrollCycleColumn" msprop:Generator_UserColumnName="IsPayrollCycle" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FPlansFreq" msprop:Generator_ColumnVarNameInTable="columnFPlansFreq" msprop:Generator_ColumnPropNameInRow="FPlansFreq" msprop:Generator_ColumnPropNameInTable="FPlansFreqColumn" msprop:Generator_UserColumnName="FPlansFreq" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CurrentInstallmentFees" msprop:Generator_ColumnVarNameInTable="columnCurrentInstallmentFees" msprop:Generator_ColumnPropNameInRow="CurrentInstallmentFees" msprop:Generator_ColumnPropNameInTable="CurrentInstallmentFeesColumn" msprop:Generator_UserColumnName="CurrentInstallmentFees" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AccountBalanceBillingFees" msprop:Generator_ColumnVarNameInTable="columnAccountBalanceBillingFees" msprop:Generator_ColumnPropNameInRow="AccountBalanceBillingFees" msprop:Generator_ColumnPropNameInTable="AccountBalanceBillingFeesColumn" msprop:Generator_UserColumnName="AccountBalanceBillingFees" type="xs:decimal" minOccurs="0" />
+              <xs:element name="LastStatementDate" msprop:Generator_ColumnVarNameInTable="columnLastStatementDate" msprop:Generator_ColumnPropNameInRow="LastStatementDate" msprop:Generator_ColumnPropNameInTable="LastStatementDateColumn" msprop:Generator_UserColumnName="LastStatementDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ChargeLSRPContigencyDeposit" msprop:Generator_ColumnVarNameInTable="columnChargeLSRPContigencyDeposit" msprop:Generator_ColumnPropNameInRow="ChargeLSRPContigencyDeposit" msprop:Generator_ColumnPropNameInTable="ChargeLSRPContigencyDepositColumn" msprop:Generator_UserColumnName="ChargeLSRPContigencyDeposit" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LSRPDepositPremium" msprop:Generator_ColumnVarNameInTable="columnLSRPDepositPremium" msprop:Generator_ColumnPropNameInRow="LSRPDepositPremium" msprop:Generator_ColumnPropNameInTable="LSRPDepositPremiumColumn" msprop:Generator_UserColumnName="LSRPDepositPremium" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RemitCurrentAmount" msprop:Generator_ColumnVarNameInTable="columnRemitCurrentAmount" msprop:Generator_ColumnPropNameInRow="RemitCurrentAmount" msprop:Generator_ColumnPropNameInTable="RemitCurrentAmountColumn" msprop:Generator_UserColumnName="RemitCurrentAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="AuditStatus" msprop:Generator_ColumnVarNameInTable="columnAuditStatus" msprop:Generator_ColumnPropNameInRow="AuditStatus" msprop:Generator_ColumnPropNameInTable="AuditStatusColumn" msprop:Generator_UserColumnName="AuditStatus" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PreviouslyBilledAmount" msprop:Generator_ColumnVarNameInTable="columnPreviouslyBilledAmount" msprop:Generator_ColumnPropNameInRow="PreviouslyBilledAmount" msprop:Generator_ColumnPropNameInTable="PreviouslyBilledAmountColumn" msprop:Generator_UserColumnName="PreviouslyBilledAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="RemitTotalAmount" msprop:Generator_ColumnVarNameInTable="columnRemitTotalAmount" msprop:Generator_ColumnPropNameInRow="RemitTotalAmount" msprop:Generator_ColumnPropNameInTable="RemitTotalAmountColumn" msprop:Generator_UserColumnName="RemitTotalAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="BillingAddress" msprop:Generator_ColumnVarNameInTable="columnBillingAddress" msprop:Generator_ColumnPropNameInRow="BillingAddress" msprop:Generator_ColumnPropNameInTable="BillingAddressColumn" msprop:Generator_UserColumnName="BillingAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="InsuredAddress" msprop:Generator_ColumnVarNameInTable="columnInsuredAddress" msprop:Generator_ColumnPropNameInRow="InsuredAddress" msprop:Generator_ColumnPropNameInTable="InsuredAddressColumn" msprop:Generator_UserColumnName="InsuredAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AgencyAddress" msprop:Generator_ColumnVarNameInTable="columnAgencyAddress" msprop:Generator_ColumnPropNameInRow="AgencyAddress" msprop:Generator_ColumnPropNameInTable="AgencyAddressColumn" msprop:Generator_UserColumnName="AgencyAddress" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="runType" msprop:Generator_ColumnVarNameInTable="columnrunType" msprop:Generator_ColumnPropNameInRow="runType" msprop:Generator_ColumnPropNameInTable="runTypeColumn" msprop:Generator_UserColumnName="runType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
